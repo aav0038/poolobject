@@ -1,3 +1,10 @@
+[![Build Status](https://www.travis-ci.com/aav0038/poolobject.svg?branch=master)](https://www.travis-ci.com/aav0038/poolobject)
+
+
+
+[![codecov](https://codecov.io/gh/aav0038/poolobject/branch/master/graph/badge.svg?token=0CNGOV3UUL)](https://codecov.io/gh/aav0038/poolobject)
+
+
 poolobject
 ==========
 
