@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
  
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.Test; 
 
 import ubu.gii.dass.c01.ReusablePool;
 import ubu.gii.dass.c01.Reusable;
@@ -76,7 +76,20 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testReleaseReusable() {
-		fail("Not yet implemented");
+		Reusable r1, r2 = null;
+		try {
+			r1 = pool.acquireReusable();
+			String hash1 = r1.util(); //almacenamos el hash del primer Reusable
+			pool.releaseReusable(r1); //liberamos eses reusable
+			r2 = pool.acquireReusable(); //adquirimos un nuevo reusable
+			assertTrue(hash1.equals(r2.util())); //comprobamos que es el mismo que hemos liberado antes
+			pool.releaseReusable(r2); //liberamos este nuevo reusable
+			pool.releaseReusable(r2); //al volver a liberarlo, se producirá excepción de Duplicado
+		} catch (NotFreeInstanceException e) { 
+			e.printStackTrace();
+		} catch (DuplicatedInstanceException e) { 
+			assertTrue(true);
+		}
 	}
 
 }
