@@ -4,8 +4,7 @@
 package ubu.gii.dass.test.c01;
 
 import static org.junit.Assert.*;
-
-import org.hamcrest.core.IsInstanceOf;
+ 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -55,7 +54,21 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testAcquireReusable() {
-		fail("Not yet implemented");
+		Reusable r1, r2, r3 = null;
+		try {
+			//Tanto r1 como r2 deben ser objetos Reusable
+			r1 = pool.acquireReusable();
+			assertNotNull(r1);
+			assertTrue(r1 instanceof Reusable);
+			r2 = pool.acquireReusable();
+			assertNotNull(r2);
+			assertTrue(r2 instanceof Reusable);
+			//Comprobamos que no son el mismo objeto reusable
+			assertFalse(r1.util().equals(r2.util()));
+			r3 = pool.acquireReusable();
+		} catch (NotFreeInstanceException e) {
+			assertNull(r3);
+		}
 	}
 
 	/**
