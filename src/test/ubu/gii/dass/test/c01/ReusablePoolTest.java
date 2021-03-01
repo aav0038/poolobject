@@ -5,9 +5,15 @@ package ubu.gii.dass.test.c01;
 
 import static org.junit.Assert.*;
 
+import org.hamcrest.core.IsInstanceOf;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import ubu.gii.dass.c01.ReusablePool;
+import ubu.gii.dass.c01.Reusable;
+import ubu.gii.dass.c01.DuplicatedInstanceException;
+import ubu.gii.dass.c01.NotFreeInstanceException;
 
 /**
  * @author alumno
@@ -15,11 +21,13 @@ import org.junit.Test;
  */
 public class ReusablePoolTest {
 
+	private ReusablePool pool;
 	/**
 	 * @throws java.lang.Exception
 	 */
 	@Before
 	public void setUp() throws Exception {
+		pool = ReusablePool.getInstance();
 	}
 
 	/**
@@ -27,6 +35,7 @@ public class ReusablePoolTest {
 	 */
 	@After
 	public void tearDown() throws Exception {
+		pool = null;
 	}
 
 	/**
@@ -34,7 +43,11 @@ public class ReusablePoolTest {
 	 */
 	@Test
 	public void testGetInstance() {
-		fail("Not yet implemented");
+		ReusablePool pool = ReusablePool.getInstance();
+		//Comprobamos que no es nulo
+		assertNotNull(pool);
+		//El objeto devuelto es una instancia de ReusablePool
+		assertTrue(pool instanceof ReusablePool);
 	}
 
 	/**
