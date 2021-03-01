@@ -4,6 +4,8 @@
 
 [![codecov](https://codecov.io/gh/aav0038/poolobject/branch/master/graph/badge.svg?token=0CNGOV3UUL)](https://codecov.io/gh/aav0038/poolobject)
 
+## **Autor**  
+Alfredo Asensio Vázquez
 
 ### **Repositorio**    
 https://github.com/aav0038/poolobject
@@ -11,11 +13,11 @@ https://github.com/aav0038/poolobject
 
 ### **Objetivos específicos**  
 
-• Comprender los objetivos de medición relacionados con la caracterización y la evaluación de
+- Comprender los objetivos de medición relacionados con la caracterización y la evaluación de
 productos, procesos y recursos software  
-• Comprender, aplicar y analizar técnicas de medición sobre entidades de productos software
+- Comprender, aplicar y analizar técnicas de medición sobre entidades de productos software
 relacionados con conjuntos de pruebas de software  
-• Comprender, aplicar y analizar medidas relacionadas sobre entidades de proceso y recursos de
+- Comprender, aplicar y analizar medidas relacionadas sobre entidades de proceso y recursos de
 prueba del software
 
 ### **Enunciado**  
