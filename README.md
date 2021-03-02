@@ -42,7 +42,7 @@ Además, se ha realizado un proceso incremental en el que se ha ido cubriendo un
 **¿Cuál es el esfuerzo invertido en realizar la actividad?**  
 Aproximadamente unas 5 horas de trabajo. El 80% del trabajo ha sido la documentación sobre las herramientas a utilizar, los conceptos teóricos y las características de la práctica. Un 10% del esfuerzo ha sido el relativo a la implementación de las pruebas. Y el 10% a otras tareas como las de redactar el readme en Markdown, dar de alta en las distintas aplicaciones e instalar las herramientas requeridas.  
 
-**¿Cuál es el número de fallos encontrados en el código?**
+**¿Cuál es el número de fallos encontrados en el código?**  
 En el código no se han encontrado errores.
 Los fallos encontrados en la realización de la práctica han sido dos. En primer lugar, la web de Travis estaba obsoleta, ya que ha cambiado a otro dominio.  
 En segundo lugar, el JDK utilizado colisionaba con la versión del JAR de jacocoant que se nos suministraba en el repositorio original.
