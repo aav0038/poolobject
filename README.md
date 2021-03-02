@@ -36,12 +36,13 @@ No, lo he realizado de manera individual.
 El proyecto supera las pruebas de integración continua en el pipeline.  
 *Enlace a Travis:* https://www.travis-ci.com/github/aav0038/poolobject  
 
-Además, se ha realizado un proceso incremental en el que se ha ido cubriendo un mayor número de pruebas sobre las distintas partes del programa, alcanzando una cobertura final del 75%. Las pruebas restantes son las referidas a la clase main (Cliente), que queda fuera de las pruebas.  
+Además, se ha realizado un proceso incremental en el que se ha ido cubriendo un mayor número de pruebas sobre las distintas partes del programa, alcanzando una cobertura final del 75% sobre el total del proyecto y un 65% respecto a la carpeta 'main'. El 35% restante de cobertura es el referido a la clase 'Cliente', que contiene el main y sobre el que no hay que realizar pruebas. Sobre la clase test la cobertura ha sido de un 85%, debido a claúsulas try/catch en las que el catch no se ejecuta.
 *Enlace a Codecov:* https://codecov.io/gh/aav0038/poolobject/  
 
 **¿Cuál es el esfuerzo invertido en realizar la actividad?**  
 Aproximadamente unas 5 horas de trabajo. El 80% del trabajo ha sido la documentación sobre las herramientas a utilizar, los conceptos teóricos y las características de la práctica. Un 10% del esfuerzo ha sido el relativo a la implementación de las pruebas. Y el 10% a otras tareas como las de redactar el readme en Markdown, dar de alta en las distintas aplicaciones e instalar las herramientas requeridas.  
 
-**¿Cuál es el número de fallos encontrados en el código?**  
-Los fallos encontrados han sido dos. En primer lugar, la web de Travis estaba obsoleta, ya que ha cambiado a otro dominio.  
+**¿Cuál es el número de fallos encontrados en el código?**
+En el código no se han encontrado errores.
+Los fallos encontrados en la realización de la práctica han sido dos. En primer lugar, la web de Travis estaba obsoleta, ya que ha cambiado a otro dominio.  
 En segundo lugar, el JDK utilizado colisionaba con la versión del JAR de jacocoant que se nos suministraba en el repositorio original.
