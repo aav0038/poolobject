@@ -44,5 +44,4 @@ Aproximadamente unas 5 horas de trabajo. El 80% del trabajo ha sido la documenta
 
 **¿Cuál es el número de fallos encontrados en el código?**  
 En el código no se han encontrado errores.  
-Los fallos encontrados en la realización de la práctica han sido dos.  En primer lugar, la web de Travis estaba obsoleta, ya que ha cambiado a otro dominio.  
-En segundo lugar, el JDK utilizado colisionaba con la versión del JAR de jacocoant que se nos suministraba en el repositorio original.
+Los fallos encontrados en la realización de la práctica han sido dos.  En primer lugar, la web de Travis estaba obsoleta, ya que ha cambiado a otro dominio. En segundo lugar, el JDK utilizado colisionaba con la versión del JAR de jacocoant que se nos suministraba en el repositorio original.
